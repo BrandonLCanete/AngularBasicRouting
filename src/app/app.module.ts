@@ -4,18 +4,11 @@ import {RouterModule, Routes} from '@angular/router';
 import {CommonModule} from "@angular/common";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppComponent} from "./app.component";
-import { NgModel } from '@angular/forms';
 import {provideAnimationsAsync} from "@angular/platform-browser/animations/async";
-import { HomepageComponent } from './components/homepage/homepage.component';
-import { LoginComponent } from './components/login/login.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { DisplayhelloworldComponent } from './fiftyComponents/displayhelloworld/displayhelloworld.component';
 
 const routes: Routes = [
-    {path: '', component: HomepageComponent},
-    {path: 'login', component: LoginComponent},
-    {path: 'sign-up', component: SignUpComponent},
-    {path: 'landing-page', component: LandingPageComponent},
+    {path: 'displayhelloworld', component: DisplayhelloworldComponent},
 ];
 
 @NgModule({
@@ -27,9 +20,6 @@ const routes: Routes = [
     ], 
     declarations: [
         AppComponent,
-        LoginComponent,
-        SignUpComponent,
-        LandingPageComponent,
     ],
     providers: [
         provideAnimationsAsync(),
